@@ -1,0 +1,7 @@
+executable = /home/wfarr/src/PlanetIX/run.py
+universe = vanilla
+output = run.out
+error = run.err
+log = run.log
+
+queue

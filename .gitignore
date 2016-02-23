@@ -3,3 +3,6 @@
 simulation.save
 orbits.pkl.gz
 *.old
+*.out
+*.err
+*.log
