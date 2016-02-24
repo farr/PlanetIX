@@ -30,3 +30,5 @@ if __name__ == '__main__':
         ofile = 'simulation.save'
         sim.save(tfile)
         os.rename(tfile, ofile)
+
+	print 'Evolved to ', sim.t
