@@ -12,12 +12,12 @@ import utils as u
 if __name__ == '__main__':
     parser = ArgumentParser()
 
-    parser.add_argument('--outdir', default='.', meta='DIR', help='output dir (default: %(default)s)')
+    parser.add_argument('--outdir', default='.', metavar='DIR', help='output dir (default: %(default)s)')
 
     args = parser.parse_args()
 
     loadpath = os.path.join(args.outdir, 'simulation.save')
-    if os.path.exists(loadpath)
+    if os.path.exists(loadpath):
         sim = re.Simulation.from_file(loadpath)
     else:       
         sim = u.outer_solar_system()
