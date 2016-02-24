@@ -1,0 +1,7 @@
+executable = /home/wfarr/src/PlanetIX/figure_5.py
+universe = vanilla
+output = figure_5.out
+error = figure_5.err
+log = figure_5.log
+
+queue
