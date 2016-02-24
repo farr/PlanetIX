@@ -41,7 +41,7 @@ def init_sim(Ntest=1000, outdir='.'):
     sim.status()
     return sim
 
-def run_sim(sim, dt=2*pi*1e9, Nout=10000, outdir='.'):
+def run_sim(sim, dt=2*pi*1e9, Nout=1000, outdir='.'):
     t0 = sim.t
 
     for t in linspace(t0, t0+dt, Nout):
