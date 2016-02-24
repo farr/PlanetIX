@@ -14,5 +14,5 @@ def outer_solar_system():
     return sim
 
 def add_canonical_planar_perturber(sim):
-    sim.add(m=3e-5, a=700, e=0.6, inc=abs(randn()*pi/180.0), Omega=2*pi*rand(), omega=2*pi*rand(), l=2*pi*rand())
+    sim.add(m=3e-5, a=700, e=0.6, pomega=2*pi*rand(), l=2*pi*rand())
     return sim
