@@ -31,7 +31,7 @@ if __name__ == '__main__':
         sim.integrate(t, exact_finish_time=0)
 
         with gzip.open(os.path.join(args.outdir, 'orbits.pkl.gz'), 'a') as out:
-            pickle.dump((sim.t, sim.calculate_orbits()))
+            pickle.dump((sim.t, sim.calculate_orbits()), out)
 
         tfile = os.path.join(args.outdir, 'simulation.save.temp')
         ofile = os.path.join(args.outdir, 'simulation.save')
