@@ -6,3 +6,4 @@ orbits.pkl.gz
 *.out
 *.err
 *.log
+*.pyc
