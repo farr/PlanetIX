@@ -17,7 +17,7 @@ if __name__ == '__main__':
         sim = u.add_canonical_inclined_perturber(sim)
         sim = u.add_inclined_aligned_testmass_disk(sim, 400)
 
-    for t in linspace(0, 2*pi*1e9, 1000):
+    for t in linspace(sim.t, sim.t+2*pi*1e9, 1000):
         sim.integrate(t, exact_finish_time=0)
 
         with gzip.open('orbits.pkl.gz', 'a') as out:

@@ -20,7 +20,7 @@ if __name__ == '__main__':
                 sim.add(m=0, a=450, e=e, inc=abs(pi/180.0*randn()), pomega=pomega, l=2*pi*rand())
         sim.N_active = 6
     
-    for t in linspace(0, 2*pi*1e9, 1000):
+    for t in linspace(sim.t, sim.t+2*pi*1e9, 1000):
         sim.integrate(t, exact_finish_time=0)
 
         with gzip.open('orbits.pkl.gz', 'a') as out:
