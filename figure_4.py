@@ -11,9 +11,9 @@ import utils as u
 if __name__ == '__main__':
     loadpath = 'simulation.save'
     if os.path.exists(loadpath):
+        sim = re.Simulation.from_file(loadpath)
         loaded = True
         start_t = sim.t
-        sim = re.Simulation.from_file(loadpath)
     else:
         loaded = False
         start_t = 0
